@@ -9,9 +9,9 @@ print("오른쪽 왼쪽 중에 선택하세요")
 print("1번은 왼쪽 2번은 오른쪽")
 
 #총 10칸의 다리가 있다
-glass = [1,1,1,1,1,1,1,1,1,1]
-for i in range(1,10):
-    glass[i] = random.randint(1,2)
+glass = []
+for i in range(10):
+    glass.append(random.randint(1,2))
     #print(glass[i])
 
 i=0
@@ -35,6 +35,7 @@ while i!=10:
 #최종 10칸까지 다가면 승리
 if i==10:
     print("축하드립니다 당신은 생존하였습니다")
+    print("다음 스테이지로 이동~")
 #중간에 틀리면 게임 오버
 else:
     print("탈락...")
